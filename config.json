@@ -1,20 +1,27 @@
 {
-  "routes": [
-    {
+  "routes": [{
       "route": "/house/:id",
       "address": "http://booking-server.us-west-1.elasticbeanstalk.com"
     },
     {
-      "route": "/descriptions/:id",
-      "address": "http://betterbnbdescriptionserver-env.up4m7x289b.us-west-1.elasticbeanstalk.com/"
+      "route": "/descriptions/:homeId",
+      "address": "http://localhost:3002"
     },
     {
       "route": "/homes/:homeId/images",
       "address": "http://betterbnb.us-east-2.elasticbeanstalk.com/"
     },
     {
-      "route": "/",
-      "address": "http://reviewsreviews.us-west-1.elasticbeanstalk.com"
+      "route": "/homes/:homeId",
+      "address": "http://localhost:3001"
+    },
+    {
+      "route": "/reviews/queried/:query",
+      "address": "http://localhost:3001"
+    },
+    {
+      "route": "/reviews/queried/:query/:id",
+      "address": "http://localhost:3001"
     }
   ]
 }
